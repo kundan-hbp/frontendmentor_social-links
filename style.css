@@ -64,8 +64,85 @@ h3 {
 }
 
 .text {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
     font-size: 0.9rem;
-    margin-top: 4.5px;
+}
+
+@media (max-width: 376px) {
+    .card {
+        width: 65vw;
+        height: 65vh;
+        border-radius: 20px;
+    }
+
+    .card img {
+        height: 14%;
+        width: 30%;
+    }
+
+    .card p:nth-of-type(2) {
+        font-size: 0.8rem;
+    }
+
+    .sub-card {
+        width: 48vw;
+        height: 3vh;
+        margin: 5px 8px;
+    }
+
+    .text {
+        height: 80%;
+    }
+}
+
+@media (min-width:377px) and (max-width: 480px) {
+    .card {
+        width: 70vw;
+        height: 58vh;
+        border-radius: 20px;
+    }
+
+    .card img {
+        height: 15%;
+        width: 30%;
+    }
+
+    .sub-card {
+        width: 60vw;
+        height: 3vh;
+        margin: 5px 8px;
+    }
+
+    .text {
+        height: 80%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1025px) {
+    .card {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .card img {
+        height: 16%;
+        width: 29%;
+    }
+
+    .sub-card {
+        width: 40vw;
+        height: 4vh;
+        margin: 7px 25px;
+    }
+}
+
+@media (min-width:1023px) and (max-width:1025px) {
+    .card {
+        width: 45vw;
+        height: 84vh;
+    }
 }
